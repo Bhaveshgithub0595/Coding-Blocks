@@ -19,19 +19,19 @@ using namespace std;
         }
         
         // upper left
-        r=row;
+        int r=row;
         for(int c=col;c<n && r>=0;c++,r--){
             if(board[r][c] =="Q") return false;
         }
         
         // lower left
-        r=row;
+        int r=row;
         for(int c=col;c>=0 && r<n;c--,r++){
             if(board[r][c] =="Q") return false;
         }
         
         // lower right
-        r=row;
+        int r=row;
         for(int c=col; c<n && r<n; c++,r++){
             if(board[r][c] =="Q") return false;
         }
